@@ -36,7 +36,18 @@ Table of contents
 /* ===================================
     Reset
 ====================================== */
+.cover{
+    margin-top: 32vh;
+}
 
+.cover-half{
+    margin-top: 16vh;
+}
+
+.avatar{
+    align-content: center;
+    padding-left: 18vw;
+}
 .content-item .overlay-content {
   bottom: 0;
   color: #fafafa;
