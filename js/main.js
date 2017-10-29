@@ -1,3 +1,16 @@
+/*change cover gaby <->SG*/
+$(document).ready(function(){
+    var newImg=new Image(); //preload newImg
+    var oldImg = $('.avatar img').attr('src');
+    newImg.src='images/bg-image/SG.png';
+    $(".avatar img").hover(function(){
+                       $('.avatar img').attr('src',newImg.src);
+                       },
+                          function(){
+                               $('.avatar img').attr('src',oldImg);
+                       });
+});
+
 (function(cash) {
     
     $('.nav-menu-icon a').on( "click", function() { 
