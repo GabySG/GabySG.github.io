@@ -36,6 +36,13 @@ Table of contents
 /* ===================================
     Reset
 ====================================== */
+.design{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
 .cover{
     margin-top: 32vh;
 }
@@ -44,9 +51,11 @@ Table of contents
     margin-top: 16vh;
 }
 
-.avatar{
+.avatar, .principle{
     align-content: center;
-    padding-left: 18vw;
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }
 .content-item .overlay-content {
   bottom: 0;
