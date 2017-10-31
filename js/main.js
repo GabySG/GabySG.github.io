@@ -11,6 +11,18 @@ $(document).ready(function(){
                        });
 });
 
+$(document).ready(function(){
+    var newImg=new Image(); //preload newImg
+    var oldImg = $('.principle img').attr('src');
+    newImg.src='images/UI/sketch.png';
+    $(".principle img").hover(function(){
+                       $('.principle img').attr('src',newImg.src);
+                       },
+                          function(){
+                               $('.principle img').attr('src',oldImg);
+                       });
+});
+
 (function(cash) {
     
     $('.nav-menu-icon a').on( "click", function() { 
