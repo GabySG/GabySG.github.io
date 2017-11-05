@@ -36,6 +36,21 @@ Table of contents
 /* ===================================
     Reset
 ====================================== */
+
+/* page loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/About/Preloader_5.gif') center no-repeat #fff;
+}
+
+
 .design{
     align-content: center;
     align-items: center;
@@ -44,14 +59,14 @@ Table of contents
 }
 
 .cover{
-    margin-top: 32vh;
+    margin-top: 22vh;
 }
 
 .cover-half{
     margin-top: 16vh;
 }
 
-.avatar, .principle{
+.cover, .principle{
     align-content: center;
     align-items: center;
     align-self: center;
