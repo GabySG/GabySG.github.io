@@ -1,15 +1,37 @@
 /*change cover gaby <->SG*/
+/* page loader */
+
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+/* change picture */
+//var imageSources = ["images/bg-image/SG.png","images/bg-image/gaby.png"]
+//var index = 0;
+//setInterval(function(){
+//    if(index === imageSources.length){
+//        index = 0;
+//    }
+//    document.getElementById("avatar").src = imageSources[index];
+//    index++;
+//},2000);
+
+/* hover changing */
 $(document).ready(function(){
     var newImg=new Image(); //preload newImg
-    var oldImg = $('.avatar img').attr('src');
-    newImg.src='images/bg-image/SG.png';
-    $(".avatar img").hover(function(){
-                       $('.avatar img').attr('src',newImg.src);
+    var oldImg = $('.cover img').attr('src');
+    newImg.src='images/bg-image/gaby.png';
+    $(".cover").hover(function(){
+                       $('.cover img').attr('src',newImg.src);
                        },
                           function(){
-                               $('.avatar img').attr('src',oldImg);
+                               $('.cover img').attr('src',oldImg);
                        });
 });
+
 
 $(document).ready(function(){
     var newImg=new Image(); //preload newImg
@@ -679,6 +701,7 @@ $(window).resize(function () {
         }
     }, 500);
 });
+
 
 $(window).on("orientationchange", function () {
     if (isMobile.any()) {
