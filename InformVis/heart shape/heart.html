@@ -231,8 +231,6 @@ div.axis_tooltip {
     </div>
 
       <div class="col-md-5">
-          
-          
         <!-- template for the heart shape -->
         <svg width="900" height="600">
           <path id="heart" opacity=0 d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,254.6c-15.8-16.6-25.6-39.1-25.6-63.9
@@ -252,8 +250,8 @@ div.axis_tooltip {
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-path.v1.min.js"></script>
-<script src="/heart%20shape/path-data-polyfill.js"></script>
-<script src="/heart%20shape/loadData.js"></script>
+<script src="http://imgaby.me/InformVis/heart%20shape/path-data-polyfill.js"></script>
+<script src="http://imgaby.me/InformVis/heart%20shape/loadData.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
@@ -309,13 +307,13 @@ svg.append("text")
 .attr("x", 220)
 .attr("y", 500)
 .attr("font-size", "30px")
-.style("fill", "#1A237E")
+.style("fill", "#1A23EE")
 .text("Men");
 
 svg.append("image")
 .attr("x", 170)
 .attr("y", 400)    
-.style("fill", "#1A237E")
+.style("fill", "#1A23EE")
 .attr("xlink:href", "male.png");
 
 svg.append("text")
@@ -485,7 +483,7 @@ function updateTip(i) {
   var circle = d3.select("#circle_points" + i);
   var cx = circle.attr("cx"), cy = circle.attr("cy")
   update_tip = d3.select("svg").append("text") 
-  .attr("id", "oppositeTip" + i)   
+  .attr("id", "oppositeTip" + i)
   .style("opacity", 1.0)
   update_tip.text("" + (i >= num / 2? i - num / 2: num / 2 - 1 - i).toFixed(1))
   .attr("x", (cx + 5) + "px")
@@ -589,7 +587,7 @@ d3.csv("data/Speed Dating Data.csv", function(data) {
   .on("change", function () {
     var sect = document.getElementById("attribute");
     var attribute = mappingAttribute(sect.options[sect.selectedIndex].value);
-    updateChart(sect.options[sect.selectedIndex].value);
+    //updateChart(sect.options[sect.selectedIndex].value);
     updateHeart()
   });
 
