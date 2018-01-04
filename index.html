@@ -10,6 +10,10 @@
         <meta name="author" content="gaby">
         <!-- favicon -->
         <link rel="shortcut icon" href="https://raw.githubusercontent.com/GabySG/GabySG.github.io/master/images/icon/icon-zoom-out.png">
+        <!--chat-->
+        <link  rel="stylesheet" href="css/chat.css">
+        <link  rel="stylesheet" href="css/chat.scss">
+        <link  rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <!-- animation -->
         <link rel="stylesheet" href="css/animate.css" />
         <!-- bootstrap -->
@@ -69,7 +73,7 @@
                         <div class="display-table-cell-vertical-middle padding-fifteen sm-padding-seven xs-padding-twenty no-padding-tb">
                             <center>
                             <h2 class="alt-font text-dark-gray letter-spacing-minus-2 font-weight-500 title-big md-title-extra-large-3 xs-title-extra-large-4 margin-five-bottom tz-text position-relative left-minus8" style="margin-top: 20%; ">Hello, I'm<br>Gaby SG.</h2>
-                            <div class="title-large tz-text margin-ten-bottom text-dark-gray font-weight-300 width-80 md-width-100 xs-width-80 xs-title-extra-large">Make things USEFUL & BEAUTIFUL</div>
+                            <div class="title-large tz-text margin-ten-bottom text-dark-gray font-weight-300 width-80 md-width-100 xs-width-80 xs-title-extra-large">I make things USEFUL & BEAUTIFUL</div>
                             </center>
                         </div>
                     </div>
@@ -77,10 +81,10 @@
                     <!-- image -->
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding xs-no-padding-15 bg-gray tz-builder-bg-image one-third-screen sm-one-third-screen avatar cover photo" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01)), transparent no-repeat; margin-top: 12%;">
                         <center><p><a><img src='images/bg-image/SG.png'></a></p><br/>
-                            <a class="btn btn-large bg-fast-pink text-white btn-circle propClone" href="http://GabySG.github.io/Doc/GabyGraphicResume.pdf"><span class="tz-text"><b>CHECK RESUME</b></span></a>
-                            <a href="http://GabySG.github.io/Doc/Looking for Summer Intern LinyingShangguanResume.pdf"><br/><u>Print-friendly Resume</u></a>
+                            <a class="btn btn-large bg-fast-pink text-white btn-circle propClone" href="http://GabySG.github.io/Doc/GabyGraphicResume.pdf"><span class="tz-text"><b>View RESUME</b></span></a>
+                            <a href="https://github.com/GabySG/GabySG.github.io/blob/master/Doc/Looking_for_SummerIntern_GabySG_Resume.pdf"><br/><u>Print-friendly Resume</u></a>
                             <br/>
-                            <a class="btn btn-large bg-fast-pink text-white btn-circle propClone" href="#portfolio"><span class="tz-text"><b>CHECK PORTFOLIO</b></span></a>
+                            <a class="btn btn-large bg-fast-pink text-white btn-circle propClone" href="#portfolio"><span class="tz-text"><b>View PORTFOLIO</b></span></a>
                         </center>
                     </div>
 <!--
@@ -266,12 +270,88 @@
                 <div class="row">
                     <!-- content details -->
                     <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 center-col text-center">
-                        <h2 class="alt-font text-dark-gray title-extra-large-5 md-title-extra-large-3 xs-title-extra-large-4 letter-spacing-minus-2 font-weight-600 sm-no-margin-top margin-twenty-top margin-eight-bottom sm-margin-five-bottom tz-text">Design better.<br>Faster. Together.</h2>
+                        <h3 class="alt-font text-dark-gray title-extra-large-5 md-title-extra-large-3 xs-title-extra-large-4 letter-spacing-minus-2 font-weight-600 sm-no-margin-top margin-twenty-top margin-eight-bottom sm-margin-five-bottom tz-text">Design better.<br>Faster. Together.</h3>
                         <h2 class="alt-font text-dark-gray title-extra-large-5 md-title-extra-large-3 xs-title-extra-large-4 letter-spacing-minus-2 font-weight-600 margin-nineteen-bottom line-height-60 xs-margin-fifteen-bottom tz-text">Let's work?</h2>
-                        <a href="mailto:linyingsg@gatech.edu" target="_blank"><button type="submit" class="btn btn-large propClone bg-fast-pink btn-circle text-white tz-text">SEND MESSAGE</button></a>  
+                        <a href="mailto:linyingsg@gatech.edu" target="_blank"><button type="submit" class="btn btn-large propClone bg-fast-pink btn-circle text-white tz-text">Email ME</button></a>  
                     </div>
                     <!-- end content details -->
                 </div>
+            </div>
+        </section>
+        
+        <section class="bg-light-gray builder-bg padding-110px-tb xs-padding-top-60px no-padding-tb border-none" id="about"><br/><br/>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding xs-no-padding-15">
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 no-padding xs-no-padding-15"></div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding xs-no-padding-15">
+                    
+                <div class="chat-title">
+                    <div class="title-text">
+                        <div class="line1">
+                            <h1>Gaby SG</h1>
+                            <span class="onLine"></span>
+                            <h2>&nbsp;Online</h2>
+                        </div>
+                        <div class="line2">
+                            <a href="http://GabySG.github.io/Doc/GabyGraphicResume.pdf" target="_blank">
+                                <span class="resume">
+                                    <img src="images/resume.svg" onmouseover="this.src='images/resumeHover.svg'"; onmouseout="this.src='images/resume.svg';">
+                                </span>
+                            </a>
+                            <a href="https://github.com/GabySG" class="margin-sixteen-right">
+                                <i class="fa fa-github tz-icon-color"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/sglyc2/" class="margin-sixteen-right">
+                                <i class="fa fa-pinterest tz-icon-color"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/linying-shangguan-8b471681/" class="margin-sixteen-right">
+                                <i class="fa fa-linkedin tz-icon-color"></i>
+                            </a>
+                            <a href="https://medium.com/@sglyc2" class="margin-sixteen-right">
+                                <i class="fa fa-medium tz-icon-color"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages">
+                    <div class="messages=contentmCustomScrollbar _mCS_1">
+                        <div id="mCSB_1" class="mCustomScrollBox mCS-lightmCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
+                            <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: 0px; lef: 0px;" dir="ltr">
+                                <div class="timestamp"></div>
+                                <div class="notification">You and Gaby are now friends. Start chating!</div>
+                                <div class="timestamp"></div>
+                                <div class="message">
+                                    <figure class="avatar">
+                                        <img src="images/bg-image/SG.png">
+                                    </figure>
+                                    <div class="greet new">
+                                        "Hi, I am Gaby SG. How are you today?"
+                                        <img src="images/icon/Smiling_Devil_Emoji_large.png" style="width:20px">
+                                    </div>
+                                </div>
+                                <div class="message new">
+                                    <div class="greet">
+                                        " I make things beautiful and useful. Is there anything I can do for you?" 
+                                    </div>
+                                </div>                     
+                            </div>
+                            
+                            <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools_mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                <div class="mCSB_draggerContainer">
+                                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position:absolute; min-height: 30px; top:0px; height: 31px; display: block; max-height: 139px;">
+                                    <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                </div>
+                                    <div class="mCSB_draggerRail"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <textarea type="text" rows="4" class="message-input" placeholder="Type message..."></textarea>
+                    <button type="submit" class="message-submit">Send</button>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 no-padding xs-no-padding-15"></div>
             </div>
         </section>
         
@@ -291,6 +371,7 @@
                         </div>
                     </div>
                     <!-- social elements -->
+<!--
                     <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 text-right sm-text-center display-table">
                         <div class="social icon-extra-small display-table-cell-vertical-middle">
                             <a href="https://www.facebook.com/profile.php?id=100014435955557" class="margin-sixteen-right">
@@ -313,6 +394,7 @@
                             </a>
                         </div>
                     </div>                            
+-->
                     <!-- end social elements -->
                 </div>
             </div>
