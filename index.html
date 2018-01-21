@@ -39,34 +39,16 @@
         <!--[if IE]>
             <script src="js/html5shiv.min.js"></script>
         <![endif]-->
-    <style>
-        .header{
-            position: fixed;
-            width:100%;
-            height:100%;
-            background-color:darkseagreen;
-            transition: top .5s;
-        }
-        
-        .hide{
-            top:-100px;
-        }
-        .show{
-            top:0;
-            }
-        }
-    </style>
     </head>
     <body>
         <div class="se-pre-con"></div>
         
-<!--
-        <header>
+      <header>
         <div class="container">
         <div class="row"> 
          <div class="logo" style="width: 50px; padding-top:0.05em; padding-left: 0.2em"><a href="index.html"><img src="images/icon/icon-zoom-out.png"></a></div>
              
-         <ul class="nav navbar-nav  collapse navbar-collapse text-large" style="padding-top:1.5em; width: 1100px; margin-right: 0px">
+         <ul class="nav navbar-nav text-large" style="padding-top:1.5em; width: 1100px; margin-right: 0px">
              <li style="float: right"!important><a href="http://GabySG.github.io/Doc/SummerInternGabySGResume.pdf" target="_blank">Resume</a></li>
              
              <li style="float: right"!important><a href="Misc.html" target="_blank">About me</a></li>
@@ -76,14 +58,12 @@
          </div>
         </div>
       </header>
--->
         
 
         <section>
-        <div>
-                <video controls autoplay>
-                    <source src="images/15MM.mp4" type="video/mp4">
-                </video>
+            <div class style="padding-top: 7em"></div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/33heKY_lnO0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         </section>
  <!--       
@@ -182,7 +162,7 @@
         </section>
 -->
         
-        <section class="bg-light-gray2 builder-bg padding-110px-tb xs-padding-top-60px no-padding-tb border-none" id="portfolio"><br/><br/>             
+        <section class="bg-light-gray2 builder-bg padding-110px-tb xs-padding-top-60px no-padding-tb border-none" id="portfolio" style="background-image: url(images/background.jpg)"><br/><br/>             
             <div class="container-fluid">
                 <div class="row">
                     <div class="work-4col gutter wide padding-four-top">
@@ -421,22 +401,6 @@
 
         <!-- javascript libraries -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script>
-        $(function() {
-            var oTop1 = $(document).scrollTop()+100; //首先获取原始滚动条高度
-            $(window).scroll(function() {
-                var oTop2 = $(document).scrollTop(); //再次获取之后的滚动条高度
-                if (oTop2 > oTop1) {
-                    $(".header").addClass("hide").removeClass("show");
-                    //获取元素添加CSS样式hide：-100px就是把原始div的height去掉，移除样式show:0px;
-                    //其实个人觉得可以改进是不是直接display可以省去事先样式？
-                } else {
-                    $(".header").addClass("show").removeClass("hide");
-                }
-                oTop1 = $(document).scrollTop();
-            });
-        });
-        </script>
         <script type="text/javascript" src="js/jquery.appear.js"></script>
         <script type="text/javascript" src="js/smooth-scroll.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
