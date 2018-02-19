@@ -175,8 +175,8 @@ dl {list-style-position: outside;}
 ::-moz-placeholder { color: #999 !important; text-overflow: ellipsis; opacity:1; } 
 :-ms-input-placeholder { color: #999 !important; text-overflow: ellipsis; opacity:1; }
 ::-webkit-scrollbar { width:12px }
-::-webkit-scrollbar-track { -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3); -moz-box-shadow:inset 0 0 6px rgba(0,0,0,.3); box-shadow:inset 0 0 6px rgba(0,0,0,.3); }
-::-webkit-scrollbar-thumb { background:rgba(210,210,210,.8); -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5); -moz-box-shadow:inset 0 0 6px rgba(0,0,0,.5); box-shadow:inset 0 0 6px rgba(0,0,0,.5); }
+::-webkit-scrollbar-track { -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.8); -moz-box-shadow:inset 0 0 6px rgba(0,0,0,.8); box-shadow:inset 0 0 6px rgba(0,0,0,.3); }
+::-webkit-scrollbar-thumb { background:rgba(210,210,210,.8); -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.8); -moz-box-shadow:inset 0 0 6px rgba(0,0,0,.8); box-shadow:inset 0 0 6px rgba(0,0,0,.8); }
 ::-webkit-scrollbar-thumb:window-inactive { background:rgba(210,210,210,.4) }
 .html-overflow { overflow: hidden;}
 .no-transition *, .owl-carousel *{ transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
