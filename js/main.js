@@ -9,41 +9,41 @@
 	});
 
 /* change picture */
-//var imageSources = ["images/bg-image/SG.png","images/bg-image/gaby.png"]
-//var index = 0;
-//setInterval(function(){
-//    if(index === imageSources.length){
-//        index = 0;
-//    }
-//    document.getElementById("avatar").src = imageSources[index];
-//    index++;
-//},2000);
+var imageSources = ["images/bg-image/SG.png","images/bg-image/gaby.png"]
+var index = 0;
+setInterval(function(){
+    if(index === imageSources.length){
+        index = 0;
+    }
+    document.getElementById("logo-image").src = imageSources[index];
+    index++;
+},2000);
 
 /* hover changing */
-$(document).ready(function(){
-    var newImg=new Image(); //preload newImg
-    var oldImg = $('.cover img').attr('src');
-    newImg.src='images/bg-image/gaby.png';
-    $(".cover").hover(function(){
-                       $('.cover img').attr('src',newImg.src);
-                       },
-                          function(){
-                               $('.cover img').attr('src',oldImg);
-                       });
-});
-
-
-$(document).ready(function(){
-    var newImg=new Image(); //preload newImg
-    var oldImg = $('.principle img').attr('src');
-    newImg.src='images/UI/sketch.png';
-    $(".principle img").hover(function(){
-                       $('.principle img').attr('src',newImg.src);
-                       },
-                          function(){
-                               $('.principle img').attr('src',oldImg);
-                       });
-});
+//$(document).ready(function(){
+//    var newImg=new Image(); //preload newImg
+//    var oldImg = $('#logo-image').attr('src');
+//    newImg.src='images/bg-image/gaby.png';
+//    $("#logo-image").hover(function(){
+//                       $('#logo-image').attr('src',newImg.src);
+//                       },
+//                          function(){
+//                               $('#logo-image').attr('src',oldImg);
+//                       });
+//});
+//
+//
+//$(document).ready(function(){
+//    var newImg=new Image(); //preload newImg
+//    var oldImg = $('.principle img').attr('src');
+//    newImg.src='images/UI/sketch.png';
+//    $(".principle img").hover(function(){
+//                       $('.principle img').attr('src',newImg.src);
+//                       },
+//                          function(){
+//                               $('.principle img').attr('src',oldImg);
+//                       });
+//});
 
 (function(cash) {
     
