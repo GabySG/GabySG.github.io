@@ -2727,8 +2727,8 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 }
 .btn-info {
  color:#fff;
- background-color:#5bc0de;
- border-color:#46b8da
+ background-color:#50E3C2;
+ border-color:#50E3C2
 }
 .btn-info.active,.btn-info.focus,.btn-info:active,.btn-info:focus,.btn-info:hover,.open>.dropdown-toggle.btn-info {
  color:#fff;
@@ -3605,7 +3605,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 }
 @media (min-width:768px) {
  .navbar-nav {
-  float:left;
+  float:right;
   margin:0
  }
  .navbar-nav>li {
