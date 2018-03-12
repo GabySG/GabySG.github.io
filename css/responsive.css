@@ -2147,7 +2147,7 @@
     .outside-arrow .owl-buttons .owl-prev, .outside-arrow .owl-buttons .owl-next { bottom: -45px; top: inherit; font-size: 15px; text-align: center; line-height: 24px; padding: 0; width: 26px; height: 26px; }
     .outside-arrow .owl-buttons .owl-next { right: 50%; margin-right: -30px;}
     .outside-arrow .owl-buttons .owl-prev { left: 50%; margin-left: -30px;}
-    .one-fourth-screen{height:auto;}
+/*    .one-fourth-screen{height:auto;}*/
     .slider-style1 .slider-title, .slider-style2 .slider-title { font-size: 50px !important; line-height: 50px !important;}
     .slider-style1 .slider-text { letter-spacing: 0;}
     .slider-style1 .one-fourth-screen { height: 400px; height:auto;}
